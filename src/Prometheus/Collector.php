@@ -120,4 +120,16 @@ abstract class Collector
             throw new InvalidArgumentException("Can't used a reserved label name: '" . $label . "'");
         }
     }
+
+    public function addLabels(array $labels = [])
+    {
+        $this->labels = array_merge($this->labels, $labels);
+        return $this;
+    }
+
+    public function setLabel(string $label, $value)
+    {
+        $this->labels[$label] = $value;
+        return $this;
+    }
 }

@@ -10,6 +10,7 @@
         }
     ],
     "replace": {
+        "PromPHP/prometheus_client_php": "*",
         "jimdo/prometheus_client_php": "*",
         "endclothing/prometheus_client_php": "*",
         "lkaemmerling/prometheus_client_php": "*"
